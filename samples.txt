@@ -1,0 +1,14 @@
+    let commands = 
+      {
+                name: 'covid',
+                description: 'For covid Details',
+                type: 1,
+                options: [
+                    {
+                        name: 'country',
+                        description: 'Gives covid Details of a specific country',
+                        type: 6,
+                        required: true
+                    }
+                ]
+      } 
