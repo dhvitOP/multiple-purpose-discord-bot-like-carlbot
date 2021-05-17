@@ -18,7 +18,7 @@ return;
      var prefix = db.fetch(`guildprefix_${message.guild.id}`);
    if(!prefix)
    {
-     var prefix = ".";
+     var prefix = client.config.prefix;
    
 }
 if(await db.has(`swear-${message.guild.id}`) === true){ 
