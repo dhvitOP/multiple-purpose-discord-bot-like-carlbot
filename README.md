@@ -68,7 +68,8 @@ mainprefix: "",  // Again Your Prefix
         support: "XXX", //The link of your Discord server
         dperms: "8" //The permissions that the bot asks on we want to add it on a Discord server (8 = moderator)
     }, 
-}```
+}
+```
 # gw-config.json
 ```{
     
@@ -87,7 +88,8 @@ mainprefix: "",  // Again Your Prefix
 
     
    
-}```
+}
+```
 # Important Installation
 After Downloading Project in Console Type `npm install` 
 ![terminal](https://github.com/dhvitOP/Again-new-Backup/blob/master/image.png?raw=true)
