@@ -1,6 +1,7 @@
 ## Dumb Bot Source Code
 Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
 ## Features 
+This bot Also Supports Many Slash-Commands
 This Bot Supports :
 Giveaways 
 Ticket System
@@ -101,4 +102,6 @@ If the Console Shows Port is running on <anything> And Logged in as < Your Bot n
 **If Your Console Shows Anything from up then Your Bot is ready and you can use it**
 # Error
 if It shows any error Contact us on our [Discord Server](https://www.dumb-dsc.tk/support)
-
+# Slash-Commands Installation
+ If you want to register your bot's Slash-commands then go on config.js and in registercommands Remove false and write true there.
+    This is not tested Yet so if you get Any error in that use Gui which is made by my one of Favourites "Androz" Website - https://slash-commands-gui.netlify.app/
