@@ -26,7 +26,7 @@ const AmeClient = require("amethyste-api");
 const { mainprefix, token, color } = require("./config.js");
 const yaml = require("js-yaml");
 const chalk = require("chalk");
-
+client.config = config;
 const { rejects } = require('assert')
 const { join } = require("path");
 const { readdirSync } = require("fs");

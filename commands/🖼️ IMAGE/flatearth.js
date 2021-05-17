@@ -8,7 +8,7 @@ module.exports = {
 	let embed = new Discord.MessageEmbed()
     .setColor('RANDOM')
     .setTitle("If the earth isn\'t flat, explain this:")
-	.setImage("https://igorkowalczyk.github.io/majobot/lib/img/earth.png")
+	.setImage("https://img.buzzfeed.com/buzzfeed-static/static/2017-09/12/11/asset/buzzfeed-prod-fastlane-01/sub-buzz-13197-1505231830-3.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto")
     message.channel.send(embed);
   } catch (err) {
     message.channel.send({embed: {

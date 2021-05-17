@@ -1,32 +1,28 @@
 
 module.exports = {
-    "registercommands" : false,
-     "token": "ODI4OTU5MjQxNTg2NjA2MTEw.YGxKdA.0V651zj1oTXX_cUbgJoRCUv3Hwo",
-    "imageapi": "81ec44aee6ccbb692dabd2eb0e1454b7f0c5ef1dd805a939a291127eb26b0f5af5bb4a94f095bceade9417c25292e746504e378f2d0f3aa2864c3d775c32e76a",
-    "ownerID": ["720632216236851260", "780029934163722280"],
-"prefix": ".",
+    "registercommands" : false, //Write True If You Are Launching The Bot First Time
+     "token": "", //Your Super Secret Bot Token
+    "imageapi": "", //Your Amethyste Api You can get it from https://api.amethyste.moe/
+    "ownerID": [], //Your Discord User ID
+"prefix": "", //Your Bot's Prefix
 "chat": {
-        "url": "http://api.brainshop.ai/get?bid=155838&key=AykidS9iM1plOZk7&uid=[uid]&msg=[msg]",
-        "bid": "155838",
-        "key": "AykidS9iM1plOZk7",
-        "uid": "nothing."
-    },
-"api": "AIzaSyCX8Af4p3kAJpjn4189RV2Z8hvMFAMbKoY",
-"youtubeAPI": "AIzaSyCX8Af4p3kAJpjn4189RV2Z8hvMFAMbKoY",
-mainprefix: ".",
-"owner": "G U D B O Y",
-defaultjoinmessage: "{user} Joined Invited By {Inviter} (Inviter Invites: {inv})",
-defaultleavemessage: "{user} Left, Invited by {inviter}",
+        "url": "",
+        "bid": "",
+        "key": "",
+        "uid": ""
+    }, // You can get This Things from https://brainshop.ai
+"api": "", // Your Youtube Api
+"youtubeAPI": "", // Your Youtube Api
+mainprefix: "",  // Again Your Prefix
+"owner": "G U D B O Y", // Owner Name
+
   basiclang: "en", //The basic language of the bot, "fr" for French and "en" for English
     embeds: {
         color: "BLUE", //Embed color (in English)
         footers: "GIVEAWAY :tada: :tada:" //Embed footer
     },
 
-    start: {
-        loading: "LOADING XD", //Loading status
-        activity: "BRUH" //Status
-    },
+   
 
     events: {
         addcolor: "GREEN", //The color of the event add (in English)
@@ -40,5 +36,5 @@ defaultleavemessage: "{user} Left, Invited by {inviter}",
     auth: {
         support: "XXX", //The link of your Discord server
         dperms: "8" //The permissions that the bot asks on we want to add it on a Discord server (8 = moderator)
-    },
+    }, 
 } 
