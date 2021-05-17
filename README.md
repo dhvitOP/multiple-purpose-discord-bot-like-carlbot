@@ -10,6 +10,8 @@ Custom Commands
 Auto Mod
 Leveling
 Much More!!
+# Original Bot
+The Original Bot is Dumb Bot and For testing You can invite That bot from here - [Invite Bot](https://www.dumb-dsc.tk/invite)
 ## Support 
 Tested Ones :
 This Bot Project Can Run on Windows , Glitch.com, Replit.com
@@ -88,4 +90,13 @@ mainprefix: "",  // Again Your Prefix
 }```
 # Important Installation
 After Downloading Project in Console Type `npm install` 
+![terminal](https://github.com/dhvitOP/Again-new-Backup/blob/master/image.png?raw=true)
+# Starting the Bot
+After Installing The Packages in console Type `node xp.js`
+![terminal](https://user-images.githubusercontent.com/45940386/111021908-e1dde880-83e8-11eb-8799-5a1b95b9998a.png)
+# Result
+If the Console Shows Port is running on <anything> And Logged in as < Your Bot name>
+**If Your Console Shows Anything from up then Your Bot is ready and you can use it**
+# Error
+if It shows any error Contact us on our [Discord Server](https://www.dumb-dsc.tk/support)
 
