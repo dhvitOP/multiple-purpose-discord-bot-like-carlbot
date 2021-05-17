@@ -92,10 +92,10 @@ mainprefix: "",  // Again Your Prefix
 ```
 # Important Installation
 After Downloading Project in Console Type `npm install` 
-![terminal](https://github.com/dhvitOP/Again-new-Backup/blob/master/image.png?raw=true)
+![terminal](https://user-images.githubusercontent.com/45940386/111021871-b22ee080-83e8-11eb-92cb-c2ff2ccc7b3f.png)
 # Starting the Bot
 After Installing The Packages in console Type `node xp.js`
-![terminal](https://user-images.githubusercontent.com/45940386/111021908-e1dde880-83e8-11eb-8799-5a1b95b9998a.png)
+![terminal](https://github.com/dhvitOP/Again-new-Backup/blob/master/image.png?raw=true)
 # Result
 If the Console Shows Port is running on <anything> And Logged in as < Your Bot name>
 **If Your Console Shows Anything from up then Your Bot is ready and you can use it**
