@@ -1,0 +1,91 @@
+## Dumb Bot Source Code
+Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
+## Features 
+This Bot Supports :
+Giveaways 
+Ticket System
+Music 
+Reaction Roles
+Custom Commands
+Auto Mod
+Leveling
+Much More!!
+## Support 
+Tested Ones :
+This Bot Project Can Run on Windows , Glitch.com, Replit.com
+UnTested Ones:
+Maybe Ubuntu
+## Size 
+This Project Size is 400mb (Counted With Database)
+## Help
+You can Join Our Support Server - [Support Server](https://www.dumb-dsc.tk/support)
+## Installation
+# Installing
+# Self Hosting
+**First of all do git clone https://github.com/dhvitOP/Again-new-Backup.git in console or Download Project from here - [Download From Here](https://github.com/dhvitOP/Again-new-Backup/archive/refs/heads/master.zip)**
+# Hosting Service
+**If you are using Hosting Service like Replit.com or glitch.com In there Go on New Project And in That go on Imprort From Github And Paste This - `https://github.com/dhvitOP/Again-new-Backup.git`**
+# Filling Config Files
+Fill the config.js and utils/gw-config.json With Your Credentials
+# Config.js
+```module.exports = {
+    "registercommands" : false, //Write True If You Are Launching The Bot First Time
+     "token": "", //Your Super Secret Bot Token
+    "imageapi": "", //Your Amethyste Api You can get it from https://api.amethyste.moe/
+    "ownerID": [], //Your Discord User ID
+"prefix": "", //Your Bot's Prefix
+"chat": {
+        "url": "",
+        "bid": "",
+        "key": "",
+        "uid": ""
+    }, // You can get This Things from https://brainshop.ai
+"api": "", // Your Youtube Api
+"youtubeAPI": "", // Your Youtube Api
+mainprefix: "",  // Again Your Prefix
+"owner": "G U D B O Y", // Owner Name
+
+  basiclang: "en", //The basic language of the bot, "fr" for French and "en" for English
+    embeds: {
+        color: "BLUE", //Embed color (in English)
+        footers: "GIVEAWAY :tada: :tada:" //Embed footer
+    },
+
+   
+
+    events: {
+        addcolor: "GREEN", //The color of the event add (in English)
+        remcolor: "RED" //The color of the event remove (in English)
+    },
+
+    reaction: "🎉", //Reaction to the giveaways if you in the console you see 'unknown emoji' that's what this emoji is not recognized by Discord
+
+    grole: "Giveaway Manager", //If the member doesn't have permission to handle messages he can still use the giveaways commands if he has the role configured right here
+
+    auth: {
+        support: "XXX", //The link of your Discord server
+        dperms: "8" //The permissions that the bot asks on we want to add it on a Discord server (8 = moderator)
+    }, 
+}```
+# gw-config.json
+```{
+    
+ 
+    "ownerID": "720632216236851260",
+
+    "everyoneMention": false,
+    "hostedBy": true,
+    "botsCanWin": false,
+
+
+    "embedColor": "#000080",
+    "embedColorEnd": "#FF0000",
+    "reaction": "🎉",
+    "giveawayEmoji": "🎉"
+
+    
+   
+}```
+# Important Installation
+After Downloading Project in Console Type `npm install` 
+
