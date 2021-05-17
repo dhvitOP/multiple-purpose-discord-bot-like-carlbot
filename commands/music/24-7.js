@@ -2,7 +2,7 @@ const { MessageEmbed } = require("discord.js");
 const db = require("quick.db");
 module.exports = {
   name: "24/7",
-  aliases: [],
+  aliases: ["pleaj"],
   execute: async(client, message, args) => {
 
  var prefix =  db.fetch(`guildprefix_${message.guild.id}`);

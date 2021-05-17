@@ -4,13 +4,9 @@ require('discord-reply')
 
 module.exports = {
   name: "status",
-  description: "Change the bot status",
-  usage: "status <here>",
-  category: "owner",
-  ownerOnly: true,
   execute: async (client, message, args) => {
     
-  
+  if(message.author.id == "720632216236851260" || message.author.id == "780029934163722280") { 
     //ARGUMENT
     if(!args.length) {
       return message.lineReply("Please give status message")
@@ -19,7 +15,7 @@ module.exports = {
  db.set(`status`, args.join(" "))
  client.user.setActivity(args.join(" ")); 
  message.lineReply("Updated the bot status")
-
+  }
     
   }
 }

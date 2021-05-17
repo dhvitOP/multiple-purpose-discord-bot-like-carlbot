@@ -2,10 +2,11 @@
   const api = require('novelcovid');
   const Discord = require("discord.js");
   const AmeClient = require("amethyste-api");
+  const config = require("../config.js");
 const commandsrun = async (interaction, client) => {
         const command = interaction.data.name.toLowerCase();
         const args = interaction.data.options;
-       let AmeAPI = new AmeClient("81ec44aee6ccbb692dabd2eb0e1454b7f0c5ef1dd805a939a291127eb26b0f5af5bb4a94f095bceade9417c25292e746504e378f2d0f3aa2864c3d775c32e76a");
+       let AmeAPI = new AmeClient(config.imageapi);
 
 
 const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");

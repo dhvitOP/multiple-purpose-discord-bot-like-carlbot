@@ -2,7 +2,7 @@
 const request = require('request-promise-native');
 const {
     chat
-} = require('./config.js');
+} = require('../config.js');
 const Discord = require("discord.js");
 const handleTalk = async (message, args) => {
     try {

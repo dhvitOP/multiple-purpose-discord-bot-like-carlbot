@@ -3,7 +3,7 @@ const AmeClient = require("amethyste-api");
 const Canvas = require("canvas");
 module.exports = {
   name: "facechange",
-  aliases: [],
+  aliases: ["facepalm"],
   execute: async(client, message, args, data, db) => {
  
 
@@ -21,7 +21,7 @@ const user = message.mentions.users.first() || client.users.cache.get(args[0]) |
 		ctx.drawImage(avatar, 199, 112, 235, 235);
         
 		// Draw layer
-		const layer = await Canvas.loadImage("./facepalm.png");
+		const layer = await Canvas.loadImage("./images/facepalm.png");
 		ctx.drawImage(layer, 0, 0, 632, 357);
 
 		const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "facepalm.png");

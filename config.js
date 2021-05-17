@@ -1,8 +1,8 @@
 
 module.exports = {
-  
+    "registercommands" : false,
      "token": "ODI4OTU5MjQxNTg2NjA2MTEw.YGxKdA.0V651zj1oTXX_cUbgJoRCUv3Hwo",
-   
+    "imageapi": "81ec44aee6ccbb692dabd2eb0e1454b7f0c5ef1dd805a939a291127eb26b0f5af5bb4a94f095bceade9417c25292e746504e378f2d0f3aa2864c3d775c32e76a",
     "ownerID": ["720632216236851260", "780029934163722280"],
 "prefix": ".",
 "chat": {
@@ -18,7 +18,6 @@ mainprefix: ".",
 defaultjoinmessage: "{user} Joined Invited By {Inviter} (Inviter Invites: {inv})",
 defaultleavemessage: "{user} Left, Invited by {inviter}",
   basiclang: "en", //The basic language of the bot, "fr" for French and "en" for English
- slashCommands: true,
     embeds: {
         color: "BLUE", //Embed color (in English)
         footers: "GIVEAWAY :tada: :tada:" //Embed footer

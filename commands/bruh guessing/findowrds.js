@@ -8,7 +8,7 @@ if (currentGames[message.guild.id]) {
 			return message.channel.send("GAME ALREADY RUNNING");
 		}
 		// Reads words file
-		const wordList = require("./words.json");
+		const wordList = require("../../utils/words.json");
 		
 		// Init some utils variables
 		const participants = [],

@@ -4,7 +4,7 @@ const db = require("quick.db");
 
 module.exports = {
   name: "help",
-  aliases: ['h'],
+  aliases: ['h', 'helppls'],
   description: "Shows all available bot commands.",
   execute: async (client, message, args) => {
 
@@ -59,7 +59,7 @@ module.exports = {
         .addField("**:information_source: BOT CODE INFO**", "`dependencies`, `modules`, `servers`, `stats`, `uptime`\n\n**:information_source: GENERAL INFO**\n`djs`, `help`, `invite`, `links`, `ping`, `serverstats`, `vote`, **`privacy`**\n\n**<:dev:819420051240517663>** **OWNERS**\n`shell`, `control`, `eval`, `usage`\n\n <a:love_Triangle:842268584192376852> **Guessing Games** <a:love_Triangle:842268584192376852>\n `find-words`, `guess-number`, `lovecalc`\n\n :cake: **Birthday Commands** :cake:\n `set-birthday`, `check-birthday`\n\n **Anti Bad Words**\n `anti-badwords`")
 
 
-        .addField("**:dolls: AUTOMOD**", "`anti-alt`, `antilink`, `autonick`, `auto-official-role`, `auto-official-role-disable`, `autorole`, `role-all`\n\n**<:laugh:819852535711268865> FUN**\n`afk`, `animesearch`, `ascii`, `baka`, `beep`, `dumb`, `calc`, `cattext`, `dice`, `eightball`, `flipcoin`, `fliptext`, `hack`, `iq`, `joke`, `kill`, `messages`, `poke`, `poll`, `ratewaifu`, `rps`, `sneeze`, `waifu`, `youtube`, `zalgo`\n\n **Information Of People**\n `Profile`\n\n **Biography**\n `set-bio`, `bio-reset`, `check-bio`\n\n **Custom Commands**\n `cc-create`, `cc-delete`")
+        .addField("**:dolls: AUTOMOD**", "`anti-alt`, `antilink`, `autonick`, `auto-official-role`, `auto-official-role-disable`, `autorole`, `role-all`\n\n**<:laugh:819852535711268865> FUN**\n`afk`, `animesearch`, `ascii`, `baka`, `beep`, `dumb`, `calc`, `cattext`, `dice`, `eightball`, `flipcoin`, `fliptext`, `hack`, `iq`, `joke`, `kill`, `messages`, `poke`, `poll`, `ratewaifu`, `rps`, `sneeze`, `waifu`, `youtube`, `zalgo`\n\n **Information Of People**\n `Profile`\n\n **Biography**\n `set-bio`, `bio-reset`, `check-bio`\n\n **Custom Commands**\n `cc-create`, `cc-delete`, `cc-list`")
 
 
         .addField("**:level_slider: LEVELING**", "`rank`\n\n**<:money:835761381008736286> ECONOMY**\n`addmoney`, `balance`, `beg`, `bet`, `buy`, `daily`, `deposit`, `monthly`, `pay`, `profile`, `roulette`, `weekly`, `withdraw`, `work`\n\n**<a:cast:835758300511338516> LOGS**\n`logs-ticket`, `set-logs`, `remove-logs`\n\n**<a:giveaway:835759764934754324> GIVEAWAY**\n`edit`, `list`, `end`, `reroll`, `start`,`create`, `cancel`\n\n**<a:music:835760380512043008> MUSIC**\n`24/7`, `bassboost`, `dc`, `connect`, `lyrics`, `np`, `pause`, `play`, `queue`, `resume`, `shuffle`, `skip`, `stop`, `volume`\n\n**<a:warning:835759241674358794> REPORT**\n`suggest`, `bug-report`\n\n**<a:welcome:835761777144889364> WELCOME AND LEAVE**\n`leave`, `set-welcome`, `set-leave`, `welcome`")

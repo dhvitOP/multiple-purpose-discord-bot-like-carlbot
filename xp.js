@@ -9,10 +9,10 @@ var botMembers = 0;
 const ytdl = require('ytdl-core');
 const search = require('youtube-search');
 const queue = new Map();
-const config1 = require('./gw-config.json');
+const config1 = require('./utils/gw-config.json');
 
 const client = new Discord.Client({ fetchAllMembers: true, messageCacheMaxSize: 5 });
-
+client.slash = require("./utils/slash-commands.js");
 module.exports = client;
 const http = require("http");
 console.log("\nLoading...");
@@ -22,7 +22,7 @@ const api = require('novelcovid');
 client.config = config1;
 const config = require("./config.js");
 const AmeClient = require("amethyste-api");
- client.util = require('./chat-bot-main.js');
+ client.util = require('./utils/chat-bot-main.js');
 const { mainprefix, token, color } = require("./config.js");
 const yaml = require("js-yaml");
 const chalk = require("chalk");
@@ -137,7 +137,7 @@ client.categories = fs.readdirSync("./commands/");
 const { GiveawaysManager } = require("discord-giveaways");
 
 client.giveawaysManager = new GiveawaysManager(client, {
-    storage: "./giveaways.json",
+    storage: "./json db/giveaways.json",
     updateCountdownEvery: 5000,
     default: {
         botsCanWin: config1.botsCanWin,
@@ -161,12 +161,12 @@ client.giveawaysManager.on("giveawayReactionRemoved", (giveaway, member, reactio
 });
 client.on("guildMemberAdd", async (member) => {
  const { loadImage, createCanvas, registerFont } = require('canvas');
-const wlcmimg = "./banner.jpg" // Add your own image. This is just for an example
+const wlcmimg = "./images/banner.jpg" // Add your own image. This is just for an example
 
 const canvas = createCanvas(1024, 500);
   const ctx = canvas.getContext('2d');
 
-  registerFont('./Uni-Sans.ttf', { family: 'Uni-Sans', weight: 500 });
+  registerFont('./utils/Uni-Sans.ttf', { family: 'Uni-Sans', weight: 500 });
 
   const pfp = await loadImage(
     member.user.displayAvatarURL({
@@ -393,7 +393,7 @@ const ms = require("parse-ms");
 const ReactionRoleManager = require("discord-reaction-role");
 // Starts updating currents reaction roles
 const manager1 = new ReactionRoleManager(client, {
-    storage: "./reaction-role.json"
+    storage: "./json db/reaction-role.json"
 });
 // We now have a reactionRoleManager property to access the manager everywhere!
 client.reactionRoleManager = manager1;
@@ -415,6 +415,29 @@ fs.readdir("./events/", (err, files) => {
  
 
 
-
-
+if(config.registercommands === true) {
+async function registerSlashCommands(dir) {;
+    fs.readdir(path.join(__dirname, dir), async (err, files) => {
+        if(err){
+            return console.log(chalk.red('An error occured when checking the commands folder for commands to load: ' + err));
+        };
+        files.forEach(async (file) => {
+            fs.stat(path.join(__dirname, dir, file), (err, stat) => {
+                if(err) return console.log(chalk.red('An error occured when checking the commands folder for commands to load: ' + err));
+                if(stat.isDirectory()) {
+                    registerSlashCommands(path.join(dir, file));
+                } else {
+                    if(!file.endsWith('.js')) return;
+                    let commandFile = require(path.join(__dirname, dir, file));
+                    slashCommandList.push({
+                        run: commandFile.slashCommand,
+                        name: file.split('.')[0]
+                    });
+                };
+            });
+        });
+    });
+};
+registerSlashCommands('./commands/');
+}
 client.login(config.token);
