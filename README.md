@@ -26,9 +26,9 @@ You can Join Our Support Server - [Support Server](https://www.dumb-dsc.tk/suppo
 ## Installation
 # Installing
 # Self Hosting
-**First of all do git clone https://github.com/dhvitOP/Again-new-Backup.git in console or Download Project from here - [Download From Here](https://github.com/dhvitOP/Again-new-Backup/archive/refs/heads/master.zip)**
+**First of all do git clone https://github.com/dhvitOP/multiple-purpose-discord-bot-like-carlbot.git in console or Download Project from here - [Download From Here](https://github.com/dhvitOPmultiple-purpose-discord-bot-like-carlbot/archive/refs/heads/master.zip)**
 # Hosting Service
-**If you are using Hosting Service like Replit.com or glitch.com In there Go on New Project And in That go on Imprort From Github And Paste This - `https://github.com/dhvitOP/Again-new-Backup.git`**
+**If you are using Hosting Service like Replit.com or glitch.com In there Go on New Project And in That go on Imprort From Github And Paste This - `https://github.com/dhvitOP/multiple-purpose-discord-bot-like-carlbot.git`**
 # Filling Config Files
 Fill the config.js and utils/gw-config.json With Your Credentials
 # Config.js
