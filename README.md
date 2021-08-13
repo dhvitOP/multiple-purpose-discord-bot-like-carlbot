@@ -1,3 +1,5 @@
+
+## This Project Development is Shifted on https://github.com/dhvitOP/dyno-clone For Adding Dashboard
 ## Dumb Bot Source Code
 Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
 
