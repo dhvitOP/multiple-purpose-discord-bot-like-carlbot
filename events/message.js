@@ -109,7 +109,81 @@ if(message.channel.id == chatbot)
        }
        }
 
-      
+     if(db.has(`globalchat_${message.guild.id}`))
+{
+ 
+  if(message.channel.id == channelto)
+  {
+    if (message.content.includes("http://")) {
+   message.channel.send("Only https certified links allowed!!!")
+    return message.delete();
+  }
+ 
+    if (message.content.includes("discord.gg/")) {
+       message.channel.send("No  Server invites allowed!!!")
+       return message.delete();
+  }
+  if (message.content.includes("Discord.gg/")) {
+       message.channel.send("No  Server invites allowed!!!")
+       return message.delete();
+  
+     }
+      if (message.content.includes("dsc.gg/")) {
+       message.channel.send("No  Server/Bot invites allowed!!!")
+       return message.delete();
+  
+     }
+      if (message.content.includes("Dsc.gg/")) {
+       message.channel.send("No  Server/Bot invites allowed!!!")
+       return message.delete();
+  
+     }
+    message.delete()
+    const messageembed = new Discord.MessageEmbed()
+    .setAuthor(`Message Sended`)
+    .setThumbnail(message.author.displayAvatarURL({dynamic: true}))
+    .setFooter(`Author: ${message.author.username} | Guild: ${message.guild.name}`)
+    if(message.content.includes("tenor"))
+    {
+      let image = message.content;
+      messageembed.setImage(message.content)
+    }
+    else { messageembed.setDescription(`${message.content}`)
+    }
+    message.channel.send(messageembed)
+    client.guilds.cache.forEach(guild => {
+         if(db.has(`globalchat_${guild.id}`))
+         {
+           var channel = db.fetch(`globalchat_${guild.id}`)
+           if(message.guild.id == guild.id) 
+           {
+             return;
+           }
+           var channel = guild.channels.cache.get(channel);
+           if(!channel) {
+             return;
+           }
+              const messageembed1 = new Discord.MessageEmbed()
+    .setAuthor(`New Message!`)
+       .setThumbnail(message.author.displayAvatarURL({dynamic: true}))
+    .setFooter(`Author: ${message.author.username} | Guild: ${message.guild.name}`)
+    if(message.content.includes("tenor"))
+    {
+      let image = message.content;
+      messageembed1.setImage(message.content)
+    }
+    else { messageembed1.setDescription(`${message.content}`)
+    }
+     channel.send(messageembed1)
+         }
+         else {
+           return;
+         }
+    })
+ return;
+  }
+  
+} 
    
   
    
