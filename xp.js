@@ -124,7 +124,10 @@ app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`))
 })
 
 
-
+client.on("message", async message => {
+  let startemojis = require("./nitro_emojis_handler/main.js")
+  startemojis(client, message, db)
+})
 
 client.commands = new Collection();
 client.aliases = new Collection();
