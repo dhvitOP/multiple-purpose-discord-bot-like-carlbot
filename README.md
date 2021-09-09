@@ -3,7 +3,8 @@
 Create new Issue in that Project if you want Some Help in Error
 ## Dumb Bot Source Code
 Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
-
+## Contact Us
+https://discord.gg/kBXYKyeWgC Join Discord and My username will be Dhvit
 ## Features 
 This bot Also Supports Many Slash-Commands
 This Bot Supports :
