@@ -1,7 +1,18 @@
 const Discord = require("discord.js");
 const path = require('path')
 const { Collection, Client, Message } = require("discord.js");
-const bot = new Discord.Client();
+ const bot = new Client({ intents: [
+				Intents.FLAGS.GUILDS,
+				
+				Intents.FLAGS.GUILD_MESSAGES,
+				Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+				Intents.FLAGS.GUILD_VOICE_STATES,
+				Intents.FLAGS.DIRECT_MESSAGES
+            
+			],
+                               partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'USER'], allowedMentions: {
+				parse: ["users"]
+			} });
 const fs = require("fs");
 const db = require("quick.db");
 const newUsers = new Discord.Collection();
@@ -11,7 +22,18 @@ const search = require('youtube-search');
 const queue = new Map();
 const config1 = require('./utils/gw-config.json');
 
-const client = new Discord.Client({ fetchAllMembers: true, messageCacheMaxSize: 5 });
+ const bot = new Client({ intents: [
+				Intents.FLAGS.GUILDS,
+				
+				Intents.FLAGS.GUILD_MESSAGES,
+				Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+				Intents.FLAGS.GUILD_VOICE_STATES,
+				Intents.FLAGS.DIRECT_MESSAGES
+            
+			],
+                               partials: ['MESSAGE', 'CHANNEL', 'REACTION', 'USER'], allowedMentions: {
+				parse: ["users"]
+			} });
 client.slash = require("./utils/slash-commands.js");
 module.exports = client;
 const http = require("http");
