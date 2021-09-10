@@ -21,7 +21,11 @@ const embed = new Discord.MessageEmbed()
 .addField("Poll", pollmessage,)
 .setFooter("Note: The voting will be ended in 30 seconds! • Bot created by " + `G U D B O Y`,)
 .setTimestamp()
+<<<<<<< HEAD
+const pollTopic = await message.channel.send({embeds: [embed]})
+=======
 const pollTopic = await message.channel.send({embed})
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 await pollTopic.react(`✅`);
 await pollTopic.react(`❌`);
 // Create a reaction collector

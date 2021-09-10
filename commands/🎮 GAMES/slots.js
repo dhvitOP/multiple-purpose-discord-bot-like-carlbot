@@ -65,7 +65,11 @@ module.exports = {
 	        .setColor("RANDOM")
 	        .setDescription(`**[ :slot_machine: ${message.author} launched the slot machine! :slot_machine: ]**`)
 	        .addField(`${reponse} \n \n${reponse2}**<** \n \n${reponse3}`, `** **`)
+<<<<<<< HEAD
+	    message.channel.send({embeds: [embed]})
+=======
 	    message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 	}
 }
 module.exports.help = {

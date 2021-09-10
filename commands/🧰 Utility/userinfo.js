@@ -73,7 +73,11 @@ const fetch = require("node-fetch");
       }
     };
 
+<<<<<<< HEAD
+    return message.channel.send({embeds: [embed]});
+=======
     return message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   }
 
     }

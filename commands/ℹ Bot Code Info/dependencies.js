@@ -10,7 +10,11 @@ try {
       .setDescription(client.user.tag + " run on " + Object.keys(require('../../package').dependencies).length + " dependencies")
 	  .setTimestamp()
 	  .setColor("RANDOM")
+<<<<<<< HEAD
+  message.channel.send({embeds: [embed]});
+=======
   message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 } catch (err) {
     message.channel.send({embed: {
                 color: 16734039,

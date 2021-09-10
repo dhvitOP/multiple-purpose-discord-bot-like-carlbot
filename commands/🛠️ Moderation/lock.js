@@ -16,7 +16,11 @@ module.exports = {
    .setTitle("Channel Updates")
    .setDescription(`🔒 ${message.channel} has been Locked`)
    .setColor("RANDOM");
+<<<<<<< HEAD
+   await message.channel.send({embeds: [embed]});
+=======
    await message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
    message.delete();
 }
 }

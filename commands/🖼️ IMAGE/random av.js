@@ -30,7 +30,11 @@ execute: async(client, message, args) => {
        .setFooter(`${user.tag}'s avatar  | Dont use this avatar without the Owner permission`)
       .setColor("RANDOM")
      .setImage(`${user.displayAvatarURL({ size: 4096, dynamic: true })}`)
+<<<<<<< HEAD
+     message.channel.send({embeds: [embed]})
+=======
      message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   }
 }
  module.exports.help = {

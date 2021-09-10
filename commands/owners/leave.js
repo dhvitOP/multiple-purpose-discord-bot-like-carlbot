@@ -13,7 +13,12 @@ module.exports = {
     let server = client.guilds.cache.get(args[0]);
     server.leave()
   }
+<<<<<<< HEAD
+embed.setDescription('Successfully left the server!')
+ message.channel.send({embeds: [embed]});
+=======
  message.channel.send(embed.setDescription('Successfully left the server!'));
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     }
 		
 	},

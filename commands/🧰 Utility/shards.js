@@ -21,7 +21,11 @@ module.exports = {
         .setAuthor("Shard Stats", client.user.displayAvatarURL())
         .setTimestamp()
         .setDescription(finale)
+<<<<<<< HEAD
+        return message.lineReply({embeds: [embed]});
+=======
         return message.lineReply(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
         function formatBytes(a, b) {
             if (0 == a) return "0 Bytes";

@@ -31,7 +31,11 @@ module.exports = {
         .setTimestamp()
 
 
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed]})
+=======
         message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     }
 }
 }

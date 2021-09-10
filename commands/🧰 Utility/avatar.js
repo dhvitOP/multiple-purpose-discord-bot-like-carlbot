@@ -11,7 +11,11 @@ module.exports = {
           .setAuthor(message.author.username + "'s Avatar", message.author.displayAvatarURL)
           .setImage(message.author.displayAvatarURL({size: 4096, dynamic: true}))  
         
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed]})
+=======
         message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     }
 
     const avatarList = message.mentions.users.map(user => {
@@ -27,7 +31,11 @@ module.exports = {
           .setAuthor(Username + "'s Avatar", AvatarURL)
           .setImage(AvatarURL)
         
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed]})
+=======
         message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     }
 }
 }

@@ -35,7 +35,7 @@
     "discord-reaction-role": "^2.1.0",
     "discord-reply": "^0.1.2",
     "discord-slash-commands-client": "^1.1.1",
-    "discord.js": "^12.5.3",
+    "discord.js": "^13.1.0",
     "djs-tickets": "^5.0.0",
     "dotenv": "^6.2.0",
     "dynoxhost.js": "^1.1.0",

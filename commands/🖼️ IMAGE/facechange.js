@@ -27,7 +27,11 @@ const user = message.mentions.users.first() || client.users.cache.get(args[0]) |
 		const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "facepalm.png");
 
 
+<<<<<<< HEAD
+		message.channel.send({embeds: [attachment]});
+=======
 		message.channel.send(attachment);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 
 	}

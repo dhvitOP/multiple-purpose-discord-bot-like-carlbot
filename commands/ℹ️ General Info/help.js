@@ -81,7 +81,11 @@ module.exports = {
         )
         .setTimestamp()
         .setColor(roleColor);
+<<<<<<< HEAD
+      return message.channel.send({embeds: [embed]});
+=======
       return message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     } else {
       const command =
         client.commands.get(args[0].toLowerCase()) ||
@@ -93,7 +97,11 @@ module.exports = {
         const embed = new MessageEmbed()
           .setTitle(`Invalid command! Use \`${prefix}help\` for all of my commands! (Some Commands will show on help And they are working just Command is disabled in detaied help command)`)
           .setColor("FF0000");
+<<<<<<< HEAD
+        return message.channel.send({embeds: [embed]});
+=======
         return message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
       }
 
       const embed = new MessageEmbed()
@@ -127,7 +135,11 @@ module.exports = {
         )
         .setTimestamp()
         .setColor(roleColor);
+<<<<<<< HEAD
+      return message.channel.send({embeds: [embed]});
+=======
       return message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     }
   },
 };

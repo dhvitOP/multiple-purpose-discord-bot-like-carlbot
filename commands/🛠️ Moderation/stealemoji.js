@@ -43,7 +43,11 @@ if (name.includes("https://") || name.includes(":")) {
         .setDescription(
           `Emoji Has Been Added! | Name : ${name} | Preview : [Click Me](${Link})`)
         .setFooter(`If the emoji doesnt uploaded that means the emoji size you tryed to upload is more than 256.0 KB `);
+<<<<<<< HEAD
+      return message.channel.send({embeds: [Added]});
+=======
       return message.channel.send(Added);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
    
   }
 }

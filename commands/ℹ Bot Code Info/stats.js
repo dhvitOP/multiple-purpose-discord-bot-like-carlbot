@@ -40,7 +40,11 @@ module.exports = {
       .addField(`:tools: Developers of This Bot -`, `Dhvit And E-E-3`, false)
       .addField(`⚙➡Prefix : `, `${prefix}`, false)
       .addField(`:chart_with_upwards_trend:Uptime:`, uptime.join(", "), false)
+<<<<<<< HEAD
+    message.channel.send({embeds: [embed]});
+=======
     message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   }
 };
 module.exports.help = {

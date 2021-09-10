@@ -36,7 +36,11 @@ module.exports = {
 	    .setFooter("This how They Both Love Each Other And also Made For Each Other (Please Dont Take This Seriously)")
       .setThumbnail("https://cdn.discordapp.com/emojis/819410218382917662.gif?v=1")
 
+<<<<<<< HEAD
+		message.channel.send({embeds: [embed]});
+=======
 		message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 
   }

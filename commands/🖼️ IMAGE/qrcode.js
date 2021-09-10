@@ -13,7 +13,11 @@ const text = args.join(" ");
         
 		const embed = new Discord.MessageEmbed()
 			.setImage(`https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${text.replace(new RegExp(" ", "g"), "%20")}`)
+<<<<<<< HEAD
+		message.channel.send({embeds: [embed]})
+=======
 		message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 		
     

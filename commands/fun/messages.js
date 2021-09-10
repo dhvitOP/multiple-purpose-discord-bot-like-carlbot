@@ -17,8 +17,13 @@ let broov1 = db.fetch(`messages_${message.guild.id}_${user.id}`);
 const embed = new Discord.MessageEmbed()
 .addField(`You have Typed`, `${broov1} Messages!!`)
 .setFooter("1 Message will be stored in  data in 5 seconds to avoid spam messages")
+<<<<<<< HEAD
+message.channel.send({embeds: [embed1]}).then(msg=>{
+  msg.edit({embeds: [embed]})
+=======
 message.channel.send(embed1).then(msg=>{
   msg.edit(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 })
 
 

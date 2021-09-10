@@ -27,7 +27,11 @@ let wUser = message.guild.member(message.mentions.users.first()) || message.guil
   .setColor("RANDOM")
   .addField(`Number of warns of `, `<@${wUser.id}> is warns: ${warnlevel}`)
   .setTimestamp()
+<<<<<<< HEAD
+  message.channel.send({embeds: [warnEmbed]});
+=======
   message.channel.send(warnEmbed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   
   
 

@@ -18,7 +18,11 @@ module.exports = {
   let moneyEmbed = new Discord.MessageEmbed()
   .setColor("RANDOM")
   .setDescription(`**${user}'s Balance**\n\nPocket: ${bal}\nBank: ${bank}`);
+<<<<<<< HEAD
+  message.channel.send({embeds: [moneyEmbed]})
+=======
   message.channel.send(moneyEmbed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

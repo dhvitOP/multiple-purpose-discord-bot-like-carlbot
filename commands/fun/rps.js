@@ -7,7 +7,11 @@ module.exports = {
         .setTitle("RPS GAME")
         .setDescription("React to play!")
         .setTimestamp()
+<<<<<<< HEAD
+        let msg = await message.channel.send({embeds: [embed]})
+=======
         let msg = await message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         await msg.react("🗿")
         await msg.react("✂")
         await msg.react("📜")

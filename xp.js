@@ -109,7 +109,7 @@ const PORT = 3000 || 3001;
   .setDescription("Here is Details:")
   .addField("Voter:", `<@${req.body.user}> has Voted Our Bot`)
   
-  cchannel.send(cembed);
+  cchannel.send({embeds: [cembed]});
 
 
 
@@ -223,7 +223,7 @@ const canvas = createCanvas(1024, 500);
 .addField(`A User Just Landed In this server!!`, `Welcome To this Server ${member} I hope You enjoy here`)
 .addField("Now this server members are -", `${member.guild.memberCount}`)
 .setColor(`RANDOM`)
-channel1.send(embed);
+channel1.send({embeds: [embed]});
 
  }
  if(message1 == "disable")
@@ -240,7 +240,7 @@ channel1.send(embed);
     .replace("-memberscount-", `${member.guild.memberCount}`);
     const welcomeembed = new Discord.MessageEmbed()
     .setDescription(message1)
-   channel1.send(welcomeembed)
+   channel1.send({embeds: [welcomeembed]})
    return;
     }
   
@@ -257,7 +257,7 @@ let image8 = db.fetch(`image3_${member.guild.id}`);
 if(image8 == "enable")
   {
   const attachment = new Discord.MessageAttachment(canvas.toBuffer(), "facepalm.png");
-  channel1.send(attachment);
+  channel1.send({embeds: [attachment]});
   }
 
 
@@ -285,7 +285,7 @@ client.on("guildMemberRemove", async (member) => {
 .setDescription(`${member} Just Left This server <:dumb_sad:830714053475303444>`)
 .addField(`Now We are of`, `${member.guild.memberCount} Members`)
 .setColor(`RANDOM`)
-channel1.send(embed)
+channel1.send({embeds: [embed]})
  }
  if(message1 == "disable")
  {
@@ -301,7 +301,7 @@ channel1.send(embed)
     .replace("-memberscount-", `${member.guild.memberCount}`);
     const welcomeembed = new Discord.MessageEmbed()
     .setDescription(message1)
-   channel1.send(welcomeembed)
+   channel1.send({embeds: [welcomeembed]})
    return;
     }
     

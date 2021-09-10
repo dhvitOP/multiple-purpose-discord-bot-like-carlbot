@@ -24,7 +24,11 @@ message.guild.channels.create(`ticket-box`, {
       const embed = new Discord.MessageEmbed()
       .setTitle(`Ticket Box`)
       .setDescription("Do `.new` for creating a ticket")
+<<<<<<< HEAD
+      channel.send({embeds: [embed]});
+=======
       channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
       let vc1 = "600";
  channel.setRateLimitPerUser(vc1, `Responsible - ${message.member}`);
  db.set(`setuped_${message.guild.id}`, channel.id);

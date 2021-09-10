@@ -39,7 +39,11 @@ module.exports = {
               .setColor(`RANDOM`)
               .addField("Question: ", `${question}`)
               .addField("Answer: ", `${answer}`)
+<<<<<<< HEAD
+          message.channel.send({embeds: [calc]});
+=======
           message.channel.send(calc);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

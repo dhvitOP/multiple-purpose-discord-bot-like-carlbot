@@ -21,7 +21,11 @@ module.exports = {
     .addField("Recovered", data.recovered, true)
     .setFooter(`Requested by ${message.author.tag}`, message.author.displayAvatarURL())
     .setTimestamp()
+<<<<<<< HEAD
+    message.channel.send({embeds: [coronaEmbed]});
+=======
     message.channel.send(coronaEmbed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     } else {
       if(args[0]){
      
@@ -42,7 +46,11 @@ module.exports = {
     .addField("Recovered", countrydata.recovered, true)
     .setFooter(`Requested by ${message.author.tag}`, message.author.displayAvatarURL())
     .setTimestamp()
+<<<<<<< HEAD
+    message.channel.send(c{embeds: [countryEmbed]})
+=======
     message.channel.send(countryEmbed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
    
     
         

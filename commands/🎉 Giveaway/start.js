@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const ms = require('ms');
 
 module.exports = {
@@ -6,6 +7,16 @@ module.exports = {
   execute: async(client, message, args) => {
     
   
+=======
+const ms = require('ms');
+
+module.exports = {
+  name: "start",
+  aliases: ["gstart"],
+  execute: async(client, message, args) => {
+    
+  
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
  
 
     // If the member doesn't have enough permissions
@@ -84,7 +95,11 @@ module.exports = {
     });
 
     message.channel.send(`${client.config.giveawayEmoji} Giveaway started in <#${giveawayChannel.id}>`);
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }}
 module.exports.help = {
     name: "start",

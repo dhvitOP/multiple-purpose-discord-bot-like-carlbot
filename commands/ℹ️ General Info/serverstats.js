@@ -18,7 +18,11 @@ module.exports = {
     .addField(`🎈 Offline Members`, `**${message.guild.members.cache.filter(member => member.presence.status == "offline").size}**`)
     .addField(`🧸 Emojis Count`, `**${message.guild.emojis.cache.size}**`)
     .addField(`🎐 Role Count`, `**${message.guild.roles.cache.size}**`)
+<<<<<<< HEAD
+    message.channel.send({embeds: [stats]})
+=======
     message.channel.send(stats)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   }
 }
 module.exports.help = {

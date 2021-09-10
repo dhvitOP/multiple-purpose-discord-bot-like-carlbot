@@ -12,19 +12,31 @@ module.exports = {
            var errembed = new Discord.MessageEmbed()
     .setDescription("<a:testfail:841362226149064755> **Failed** <a:testfail:841362226149064755>")
     .addField("Error:", `You Didnt Gave me a Name of Your Custom Command`)
+<<<<<<< HEAD
+     return message.channel.send({embeds: [errembed]})
+=======
      return message.channel.send(errembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
      }
      if(!response) {
            var errembed = new Discord.MessageEmbed()
     .setDescription("<a:testfail:841362226149064755> **Failed** <a:testfail:841362226149064755>")
     .addField("Error:", `You Didnt Gave me a Reply of Your Custom Command`)
+<<<<<<< HEAD
+     return message.channel.send({embeds: [errembed]})
+=======
      return message.channel.send(errembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
      }
      if(db.has(`${name}_${message.guild.id}`)){
          var errembed = new Discord.MessageEmbed()
     .setDescription("<a:testfail:841362226149064755> **Failed** <a:testfail:841362226149064755>")
     .addField("Error:", `This Command Already Exist Please Delete it First to add New One`)
+<<<<<<< HEAD
+     return message.channel.send({embeds: [errembed]})
+=======
      return message.channel.send(errembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
      }
      db.set(`${name}_${message.guild.id}`, response);
      db.set(`cc_${name}`, name);
@@ -35,7 +47,11 @@ module.exports = {
    .setDescription("<a:testing:841362113212842045> **Successfull** <a:testing:841362113212842045>")
    .addField("Custom Command Name to Set:", name)
    .addField("Custom Command Reply/Response to Set:", response)
+<<<<<<< HEAD
+   message.channel.send({embeds: [aembed]});
+=======
    message.channel.send(aembed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
      
   }
 }

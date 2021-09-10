@@ -33,7 +33,11 @@ module.exports = {
         .setFooter(message.guild.name, client.user.displayAvatarURL());
       db.delete(`guildprefix_${message.guild.id}`);
       db.set(`guildprefix_${message.guild.id}`, newprefix);
+<<<<<<< HEAD
+      return message.channel.send({embeds: [changedprefix]});
+=======
       return message.channel.send(changedprefix);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     
 
   

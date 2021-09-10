@@ -14,7 +14,11 @@ module.exports = {
         .setTitle("Joke")
         .setDescription(response.body.joke)
         .setColor("RANDOM");
+<<<<<<< HEAD
+        message.channel.send({embeds: [jEmbed]});
+=======
         message.channel.send(jEmbed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 		})
     }
 }

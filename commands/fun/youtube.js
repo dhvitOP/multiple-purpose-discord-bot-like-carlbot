@@ -27,13 +27,21 @@ const searcher = new YTSearcher(cnf.api);
 	  let embed2 = new Discord.MessageEmbed()
       .setDescription("I couldn't find anything on Youtube with your query!")
       .setColor('FF5757');
+<<<<<<< HEAD
+	   return msg.edit({embeds: [embed2]});
+=======
 	   return msg.edit(embed2);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         }
       let embed = new Discord.MessageEmbed()
       .setTitle("🔎 Youtube Search result:")
       .setDescription("`First result:` " + info.first.url + " - " + info.first.title + "\n \`\`\`" + info.first.description + "\`\`\`")
       .setColor('RANDOM');
+<<<<<<< HEAD
+      msg.edit({embeds: [embed]});
+=======
       msg.edit(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     });
 
   } catch (err) {

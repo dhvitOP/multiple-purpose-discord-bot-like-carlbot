@@ -18,7 +18,11 @@ const ms = require("parse-ms");
         let timeEmbed = new Discord.MessageEmbed()
         .setColor("RANDOM")
         .setDescription(`:x:  You have already worked recently\n\nTry again in ${time.minutes}m ${time.seconds}s `);
+<<<<<<< HEAD
+        message.channel.send({embeds: [timeEmbed]})
+=======
         message.channel.send(timeEmbed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
       } else {
 
         let replies = ['Programmer','Builder','Waiter','Busboy','Chief','Mechanic']
@@ -28,7 +32,11 @@ const ms = require("parse-ms");
         let embed1 = new Discord.MessageEmbed()
         .setColor("RANDOM")
         .setDescription(`:white_check_mark: You worked as a ${replies[result]} and earned ${amount} coins`);
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed1]})
+=======
         message.channel.send(embed1)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         
         db.add(`money_${message.author.id}`, amount)
         db.set(`work_${message.author.id}`, Date.now())

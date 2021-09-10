@@ -26,7 +26,11 @@ module.exports = {
       )
       .setColor(`${embed || color}`)
       .setAuthor(client.user.username, client.user.avatarURL());
+<<<<<<< HEAD
+    message.channel.send({embeds: [sucs]});
+=======
     message.channel.send(sucs);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   }
 }
 module.exports.help = {

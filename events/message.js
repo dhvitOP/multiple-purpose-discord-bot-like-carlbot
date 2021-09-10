@@ -150,7 +150,11 @@ if(message.channel.id == chatbot)
     }
     else { messageembed.setDescription(`${message.content}`)
     }
+<<<<<<< HEAD
+    message.channel.send({embeds: [messageembed]})
+=======
     message.channel.send(messageembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     client.guilds.cache.forEach(guild => {
          if(db.has(`globalchat_${guild.id}`))
          {
@@ -174,7 +178,11 @@ if(message.channel.id == chatbot)
     }
     else { messageembed1.setDescription(`${message.content}`)
     }
+<<<<<<< HEAD
+     channel.send({embeds: [messageembed1]})
+=======
      channel.send(messageembed1)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
          }
          else {
            return;

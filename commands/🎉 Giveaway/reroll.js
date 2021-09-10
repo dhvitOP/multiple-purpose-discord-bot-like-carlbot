@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const ms = require('ms');
 
 module.exports = {
@@ -6,6 +7,16 @@ module.exports = {
   execute: async(client, message, args) => {
 
 
+=======
+const ms = require('ms');
+
+module.exports = {
+  name: "reroll",
+  aliases: ["greroll"],
+  execute: async(client, message, args) => {
+
+
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   // If the member doesn't have enough permissions
      if (!message.member.hasPermission("MANAGE_GUILD"))
     {
@@ -49,7 +60,11 @@ module.exports = {
             console.error(e);
             message.channel.send(':x: There was an error');
         }
+<<<<<<< HEAD
     });
+=======
+    });
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }}
 module.exports.help = {
     name: "reroll",

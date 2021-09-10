@@ -15,7 +15,11 @@ module.exports = {
 		.addField("Api ping:", + `${Math.round(client.ws.ping)}` + "ms")
         .setColor('RANDOM')
 		.setTimestamp()
+<<<<<<< HEAD
+        msg.edit({embeds: [ping]});
+=======
         msg.edit(ping);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         msg.edit("\u200B")
     })
 }

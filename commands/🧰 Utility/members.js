@@ -12,7 +12,11 @@ module.exports = {
     .setColor("RANDOM")
     .addField("Overall Members:", message.guild.memberCount || message.guild.members.size)
   
+<<<<<<< HEAD
+  message.channel.send({embeds: [embed]});
+=======
   message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

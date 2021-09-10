@@ -35,7 +35,11 @@ if (!user) return message.channel.send({embed: {
     let moneyEmbed = new Discord.MessageEmbed()
     .setColor("RANDOM")
     .setDescription(`:white_check_mark: Added ${args[1]} coins\n\nNew Balance: ${bal}`);
+<<<<<<< HEAD
+    message.channel.send({embeds: [moneyEmbed]})
+=======
     message.channel.send(moneyEmbed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     } else {
 	message.channel.send({embed: {
                     color: 16734039,

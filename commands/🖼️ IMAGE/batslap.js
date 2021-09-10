@@ -23,7 +23,11 @@ if(users[1] == message.author)
 	
 		const attachment = new Discord.MessageAttachment(buffer, "approved.png");
 	
+<<<<<<< HEAD
+		message.channel.send({embeds: [attachment]});
+=======
 		message.channel.send(attachment);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 	}
 }

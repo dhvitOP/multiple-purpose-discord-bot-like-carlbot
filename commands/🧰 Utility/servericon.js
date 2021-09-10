@@ -11,7 +11,11 @@ module.exports = {
     .setImage(message.guild.iconURL())
     .setTimestamp()
 
+<<<<<<< HEAD
+  await message.channel.send({embeds: [embed]});
+=======
   await message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

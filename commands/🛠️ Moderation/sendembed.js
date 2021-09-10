@@ -25,7 +25,11 @@ let colour1 = db.fetch(`embed_${message.guild.id}`);
            const embed1 = new Discord.MessageEmbed()
            .setDescription(args.join(" ").replace(taggedChannel, ""))
            .setColor(`${colour1}`)
+<<<<<<< HEAD
+            await taggedChannel.send({embeds: [embed1]});
+=======
             await taggedChannel.send(embed1);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
              message.channel.send(`btw you can change the embed color by ${prefix2}embed <any_color> like RED BLUE AND ETC`) .then(message => {
             message.delete({ timeout: 10000 })
  });
@@ -37,7 +41,11 @@ let colour1 = db.fetch(`embed_${message.guild.id}`);
         const embed = new Discord.MessageEmbed()
         .setDescription(args.join(" "))
         .setColor(`${colour}`)
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed]})
+=======
         message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         message.channel.send(`btw you can change the embed color by ${prefix1}embed <any_color> like RED BLUE AND ETC`) .then(message => {
             message.delete({ timeout: 10000 })
  });

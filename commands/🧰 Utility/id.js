@@ -13,7 +13,11 @@ module.exports = {
     .setThumbnail(mention.user.avatarURL)
     .setColor("RANDOM")
     .addField('Here is ' + `${mention.user.username}\'s ID`, mention.id)
+<<<<<<< HEAD
+    message.channel.send({embeds: [lolid]})  
+=======
     message.channel.send(lolid)  
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

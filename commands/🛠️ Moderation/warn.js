@@ -46,7 +46,11 @@ const db = require("quick.db")
   .addField("Number of Warnings:", warns[wUser.id].warns)
   .addField("Reason:", reason)
   .setTimestamp()
+<<<<<<< HEAD
+  message.channel.send({embeds: [warnEmbed]});
+=======
   message.channel.send(warnEmbed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
   }
 module.exports.help = {

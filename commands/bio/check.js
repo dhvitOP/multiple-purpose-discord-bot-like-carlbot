@@ -17,6 +17,10 @@ var checking = db.fetch(`biography_${user.id}`);
    const aembed = new Discord.MessageEmbed()
    .setDescription("<a:testing:841362113212842045> **Successfull** <a:testing:841362113212842045>")
    .addField("Bio:", checking)
+<<<<<<< HEAD
+   message.channel.send({embeds: [aembed]});
+=======
    message.channel.send(aembed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   }
 }

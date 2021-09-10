@@ -26,7 +26,11 @@ module.exports = {
                         .setDescription(`[${title}](${link})\n\n${text}`)
                         .setURL(`https://reddit.com/${subRedditName}`)
 
+<<<<<<< HEAD
+                    message.channel.send({embeds: [textembed]})
+=======
                     message.channel.send(textembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
                 }
 
                 var image = index.preview.images[0].source.url.replace('&amp;', '&')
@@ -41,7 +45,11 @@ module.exports = {
                         .setDescription(`[${title}](${link})\n\n${text}`)
                         .setURL(`https://reddit.com/${subRedditName}`)
 
+<<<<<<< HEAD
+                    message.channel.send({embeds: [textembed]})
+=======
                     message.channel.send(textembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
                 }
                
                 const imageembed = new Discord.MessageEmbed()
@@ -50,7 +58,11 @@ module.exports = {
                     .setColor(9384170)
                     .setDescription(`[${title}](${link})`)
                     .setURL(`https://reddit.com/${subRedditName}`)
+<<<<<<< HEAD
+                message.channel.send({embeds: [imageembed]})
+=======
                 message.channel.send(imageembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
             }).on('error', function (e) {
                 console.log('Got an error: ', e)
             })

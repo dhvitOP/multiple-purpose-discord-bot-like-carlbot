@@ -4,8 +4,13 @@
   const AmeClient = require("amethyste-api");
   const config = require("../config.js");
 const commandsrun = async (interaction, client) => {
+<<<<<<< HEAD
+        const command = interaction.commandName;
+        const args = interaction.options;
+=======
         const command = interaction.data.name.toLowerCase();
         const args = interaction.data.options;
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
        let AmeAPI = new AmeClient(config.imageapi);
 
 
@@ -78,13 +83,30 @@ const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [m
             var channel = args[3].value;
             console.log(channel)
             console.log(interaction)
+<<<<<<< HEAD
+            var guild = interaction.guild.id;
+=======
             var guild = interaction.guild_id;
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
             var guild = client.guilds.cache.get(guild);
             var member2 = guild.members.fetch(interaction.member.user.id);
            
             var member2 = guild.members.cache.get(member.user.id);
             console.log(member2);
              if(member2.hasPermission("MANAGE_GUILD")){
+<<<<<<< HEAD
+                await interaction.reply("Done Message Sended");
+            var channel = client.channels.cache.get(channel);
+            return channel.send({embeds: [aembed]});
+
+             }
+              else {
+               await interaction.reply("You dont have Permission");
+              }
+              }
+            }
+           await interaction.reply({embeds: [aembed]});
+=======
                 client.api.interactions(interaction.id, interaction.token).callback.post({
                 data: {
                     type: 4,
@@ -120,6 +142,7 @@ const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [m
                     }
                 }
             })
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         }
             if (command === 'triggered'){ 
           
@@ -421,6 +444,9 @@ var secuser = client.users.cache.get(args[0].value);
   .setFooter("Bot created by " + `Dumbiess`)
   .setImage(`https://cdn.discordapp.com/attachments/789520293311676436/829675394616524869/standard_1.gif`)
   .setTimestamp()
+<<<<<<< HEAD
+           await interaction.reply({embeds: [inviteembed]});
+=======
             client.api.interactions(interaction.id, interaction.token).callback.post({
                 data: {
                     type: 4,
@@ -430,6 +456,7 @@ var secuser = client.users.cache.get(args[0].value);
                     }
                 }
             })
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         }
          
         if (command === 'stats'){ 
@@ -453,6 +480,9 @@ var secuser = client.users.cache.get(args[0].value);
       .addField(`:chart_with_upwards_trend:Uptime:`, duration, false)
     
 
+<<<<<<< HEAD
+         await interaction.reply({embeds: [embed]});
+=======
             await client.api.interactions(interaction.id, interaction.token).callback.post({
                 data: {
                     type: 4,
@@ -462,6 +492,7 @@ var secuser = client.users.cache.get(args[0].value);
                     }
                 }
             })
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         }
           if (command === 'covid'){ 
               if(!args)
@@ -511,6 +542,9 @@ var secuser = client.users.cache.get(args[0].value);
     .addField("Recovered", data.recovered, true)
     .setFooter(`Requested by ${user2.user.username}`)
     .setTimestamp() 
+<<<<<<< HEAD
+         await interaction.reply({embeds: [covidembed]});
+=======
           await    client.api.interactions(interaction.id, interaction.token).callback.post({
                 data: {
                     type: 4,
@@ -520,6 +554,7 @@ var secuser = client.users.cache.get(args[0].value);
                     }
                 }
             })
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
             
         
           }
@@ -579,6 +614,9 @@ var secuser = client.users.cache.get(args[0].value);
         )
         .setTimestamp()
      
+<<<<<<< HEAD
+          await interaction.reply({embeds: [embeding]});
+=======
           
             client.api.interactions(interaction.id, interaction.token).callback.post({
                 data: {
@@ -590,6 +628,7 @@ var secuser = client.users.cache.get(args[0].value);
                     }
                 }
             })
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         }
 }
   module.exports = {

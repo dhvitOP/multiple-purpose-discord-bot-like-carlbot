@@ -49,7 +49,11 @@ if(!bio){
   let moneyEmbed = new Discord.MessageEmbed()
   .setColor("#FFFFFF")
   .setDescription(`**${user}'s Profile**\n\nPocket: ${money}\nBank: ${bank}\nVIP Rank: ${vip}\n\n**Inventory**\n\nNikes: ${shoes}\nCars: ${newcar}\nMansions: ${newhouse}\n\n **Information Of Person**\n\n Birthdate: ${checking}\n Bio: ${bio}`);
+<<<<<<< HEAD
+  message.channel.send({embeds: [moneyEmbed]})
+=======
   message.channel.send(moneyEmbed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 
   }

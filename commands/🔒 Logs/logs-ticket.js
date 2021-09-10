@@ -37,7 +37,11 @@ const channel = message.mentions.channels.first() || message.guild.channels.cach
 					const embed = new MessageEmbed()
 						.setDescription(`[\`📄 View\`](${response.url})`)
 						.setColor('GREEN');
+<<<<<<< HEAD
+					message.reply('the transcript is complete. Please click the link below to view the transcript', {embeds: [embed]});
+=======
 					message.reply('the transcript is complete. Please click the link below to view the transcript', embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 				});
 			}
 		}

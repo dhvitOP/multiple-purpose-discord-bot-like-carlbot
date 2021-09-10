@@ -29,7 +29,11 @@ module.exports = {
         .addField('Email:-', response.email ? response.email : 'No Email') // Email Of User Searched
         .addField('Company:-', response.company ? response.commands : 'No Company') // Company Of User Searched
         .addField('Location:-', response.location ? response.location : 'No Location') // Location Of User Searched
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed]})
+=======
         message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     
     }
     

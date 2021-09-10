@@ -28,7 +28,11 @@ let userpremiumdata = {
 
 
     if (args[0] == 'bronze') {
+<<<<<<< HEAD
+        if (author < 3500) return message.channel.send({embeds: [Embed]})
+=======
         if (author < 3500) return message.channel.send(Embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
         
         db.fetch(`bronze_${message.author.id}`);
         db.set(`bronze_${message.author.id}`, true)
@@ -44,7 +48,11 @@ let userpremiumdata = {
         .setColor("FF5757")
         .setDescription(`You need 600 coins to purchase some Nikes`);
 
+<<<<<<< HEAD
+        if (author < 600) return message.channel.send({embeds: [Embed2]})
+=======
         if (author < 600) return message.channel.send(Embed2)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
        
         db.fetch(`nikes_${message.author.id}`)
         db.add(`nikes_${message.author.id}`, 1)
@@ -54,13 +62,21 @@ let userpremiumdata = {
         .setDescription(`:white_check_mark:  Purchased Fresh Nikes For 600 Coins`);
 
         db.subtract(`money_${message.author.id}`, 600)
+<<<<<<< HEAD
+        message.channel.send({embeds: [Embed3]})
+=======
         message.channel.send(Embed3)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     } else if(args[0] == 'car') {
         let Embed2 = new Discord.MessageEmbed()
         .setColor("FF5757")
         .setDescription(`You need 800 coins to purchase a new car you poor guy do ,beg to earn some coins`);
 
+<<<<<<< HEAD
+        if (author < 800) return message.channel.send({embeds: [Embed2]})
+=======
         if (author < 800) return message.channel.send(Embed2)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
        
         db.fetch(`car_${message.author.id}`)
         db.add(`car_${message.author.id}`, 1)
@@ -76,7 +92,11 @@ let userpremiumdata = {
         .setColor("FF5757")
         .setDescription(` You need 1200 coins to purchase a Mansion`);
 
+<<<<<<< HEAD
+        if (author < 1200) return message.channel.send({embeds: [Embed2]})
+=======
         if (author < 1200) return message.channel.send(Embed2)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
        
         db.fetch(`house_${message.author.id}`)
         db.add(`house_${message.author.id}`, 1)
@@ -86,7 +106,11 @@ let userpremiumdata = {
         .setDescription(`:white_check_mark: Purchased a Mansion For 1200 Coins`);
 
         db.subtract(`money_${message.author.id}`, 1200)
+<<<<<<< HEAD
+        message.channel.send({embeds: [Embed3]})
+=======
         message.channel.send(Embed3)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 		
 	} else if(args[0] == 'list') {
 	let list = new Discord.MessageEmbed()
@@ -99,7 +123,11 @@ let userpremiumdata = {
     .addField("7 Days Premium", "Cost: 3000 coins")
       .addField("15 Days Premium", "Cost: 6500 coins")
         .addField("30 Days Premium", "Cost: 10,000 coins")
+<<<<<<< HEAD
+		message.channel.send({embeds: [list]})
+=======
 		message.channel.send(list)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
    
     
       

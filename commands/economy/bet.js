@@ -28,13 +28,21 @@ module.exports = {
     if(botrun <= run) {
       const embed20 = new MessageEmbed()
       .setDescription(`You won ${winAmount} coins My number was : ${botrun} And your was ${run}`)
+<<<<<<< HEAD
+      message.channel.send({embeds: [embed20]});
+=======
       message.channel.send(embed20);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
        db.add(`money_${message.author.id}`, winAmount)
       
     } else {
         const embed21 = new MessageEmbed()
         .setDescription(`Sad You lost ${amountToBet} coins better luck next time My Number was : ${botrun} and your was ${run}`)
+<<<<<<< HEAD
+        message.channel.send({embeds: [embed21]});
+=======
         message.channel.send(embed21);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
       db.subtract(`money_${message.author.id}`, amountToBet);
       
     }

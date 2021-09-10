@@ -61,6 +61,15 @@ const eyesembed = new Discord.MessageEmbed()
   .setDescription(`I would rate **${m421}** ${result}/100 ??`)
   .setColor(`GREEN`)
 
+<<<<<<< HEAD
+  if (result > 90) return message.channel.send({embeds: [happrate]})
+  if (result < 30) return message.channel.send({embeds: [sadembed]})
+  if (result > 40) return message.channel.send({embeds: [idkembed]})
+  if (result > 50) return message.channel.send({embeds: [shrugembed]})
+  if (result > 60) return message.channel.send({embeds: [okembed]})
+  if (result > 70) return message.channel.send({embeds: [thumbupembed]})
+  if (result > 80) return message.channel.send({embeds: [eyesembed]})
+=======
   if (result > 90) return message.channel.send(happyrate)
   if (result < 30) return message.channel.send(sadembed)
   if (result > 40) return message.channel.send(idkembed)
@@ -68,6 +77,7 @@ const eyesembed = new Discord.MessageEmbed()
   if (result > 60) return message.channel.send(okembed)
   if (result > 70) return message.channel.send(thumbupembed)
   if (result > 80) return message.channel.send(eyesembed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 } 
 }
 module.exports.help = {

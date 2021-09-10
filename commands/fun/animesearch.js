@@ -24,7 +24,11 @@ module.exports = {
       .addField('Score Stats', data.scoreStats)
       .addField('Link', data.url);
 
+<<<<<<< HEAD
+      message.channel.send({embeds: [malEmbed]});
+=======
       message.channel.send(malEmbed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
     }).catch((err) => message.channel.send({embed: {
                 color: 16734039,

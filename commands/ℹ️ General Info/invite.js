@@ -16,7 +16,11 @@ const embed = new Discord.MessageEmbed()
   .setFooter("Bot created by Dumbiess")
   .setImage(`https://cdn.discordapp.com/attachments/789520293311676436/829675394616524869/standard_1.gif`)
   .setTimestamp()
+<<<<<<< HEAD
+message.author.send({embeds: [embed]})
+=======
 message.author.send({embed})
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 message.channel.send({embed: {
             color: 3447003,

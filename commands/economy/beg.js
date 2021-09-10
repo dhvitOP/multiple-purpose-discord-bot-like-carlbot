@@ -25,7 +25,11 @@ module.exports = {
     let moneyEmbed = new Discord.MessageEmbed()
   .setColor("RANDOM")
   .setDescription(`:white_check_mark:  You've begged and received ${amount} coins | poor guy ewww`);
+<<<<<<< HEAD
+  message.channel.send({embeds: [moneyEmbed]})
+=======
   message.channel.send(moneyEmbed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
   db.add(`money_${message.author.id}`, amount)
   db.set(`beg_${message.author.id}`, Date.now())
 

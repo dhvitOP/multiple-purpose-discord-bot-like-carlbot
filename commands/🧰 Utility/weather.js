@@ -12,7 +12,11 @@ if(args.length === 0){
     .setDescription("Please enter a location!")
 	.setColor("FF5757")
     .setTimestamp()
+<<<<<<< HEAD
+  return message.channel.send({embeds: [errorembed]});
+=======
   return message.channel.send(errorembed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 
 weather.find({search: args.join(" "), degreeType: 'C'}, function(err, result) {
@@ -23,7 +27,11 @@ if(!result){
     .setDescription("Please enter a vaild location!")
 	.setColor("FF5757")
     .setTimestamp()
+<<<<<<< HEAD
+  return message.channel.send({embeds: [errorembed]});
+=======
   return message.channel.send(errorembed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 
   var current = result[0].current;
@@ -34,7 +42,11 @@ if(!result){
     .setDescription("Please enter a vaild location!")
 	.setColor("FF5757")
     .setTimestamp()
+<<<<<<< HEAD
+  return message.channel.send({embeds: [errorembed]});
+=======
   return message.channel.send(errorembed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 	}
 
 	
@@ -49,7 +61,11 @@ if(!result){
     .addField('Feels Like', `${current.feelslike} Degrees`, true)
     .addField('Winds', current.winddisplay, true)
     .addField('Humidity', `${current.humidity}%`, true)
+<<<<<<< HEAD
+    message.channel.send({embeds: [embed]})
+=======
     message.channel.send(embed)
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 });
 
 

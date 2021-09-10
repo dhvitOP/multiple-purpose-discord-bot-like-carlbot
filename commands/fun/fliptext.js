@@ -21,7 +21,11 @@ if (args.length <= 0) return message.channel.send({embed: {
 const embed = new Discord.MessageEmbed()
       .setColor("RANDOM")
 	  .setTitle("Flipped text: " + flipped.join(" "))
+<<<<<<< HEAD
+  await message.channel.send({embeds: [embed]});
+=======
   await message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

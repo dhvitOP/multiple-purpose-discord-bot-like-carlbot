@@ -48,7 +48,11 @@ const prompt = await message.channel.send(`Hacking ${user ? hacked.username : ha
   .setDescription(`A Dangerous and very ORIGINAL HACKING of ${user ? hacked.username : hacked} is just completed`)
   .setImage("https://media1.tenor.com/images/5ba5501d9ee356cc0c478daa57306c19/tenor.gif?itemid=20964053");
   await prompt.delete
+<<<<<<< HEAD
+   await  message.channel.send({embeds: [embed]});
+=======
    await  message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     
 
   }

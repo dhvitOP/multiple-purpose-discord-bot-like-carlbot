@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const ms = require('ms');
 
 module.exports = {
@@ -6,6 +7,16 @@ module.exports = {
   execute: async(client, message, args) => {
 
  
+=======
+const ms = require('ms');
+
+module.exports = {
+  name: "edit",
+  aliases: ["gedit"],
+  execute: async(client, message, args) => {
+
+ 
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
      // If the member doesn't have enough permissions
         if (!message.member.hasPermission("MANAGE_GUILD"))
     {
@@ -57,7 +68,11 @@ module.exports = {
         });
     }else{
         return message.channel.send(':x: You need to either edit the prize or the winners!');
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 }
 }
 module.exports.help = {

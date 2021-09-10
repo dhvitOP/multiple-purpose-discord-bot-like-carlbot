@@ -15,7 +15,11 @@ const embed = new Discord.MessageEmbed()
 .addField("Today is:", `${Day}` + ", " + `${Month}` + ", " + `${Year}`)
 .addField("Time of day:", `${today.toString().split(" ")[4]}`)
 .setFooter("This Time is ofOur hosting Service")
+<<<<<<< HEAD
+message.channel.send({embeds: [embed]})
+=======
 message.channel.send({ embed })
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
 
 }
   }

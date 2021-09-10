@@ -6,7 +6,11 @@ module.exports = async (client, message) => {
     
     client.user.setActivity(`Your Commands!!! | .help FOr My Commands | Also Watching ${client.guilds.cache.size} Servers`, { type : "WATCHING" });
    
+<<<<<<< HEAD
+      client.ws.on('interactionCreate', async (interaction) => {
+=======
       client.ws.on('INTERACTION_CREATE', async (interaction) => {
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
    client.slash.commandsrun(interaction, client);
   
     })          

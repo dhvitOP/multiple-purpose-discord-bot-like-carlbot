@@ -67,7 +67,11 @@ value: `${message.guild.roles.cache.size}`
           }
         }
       };
+<<<<<<< HEAD
+      return message.channel.send({embeds: [embed]});
+=======
       return message.channel.send(embed);
+>>>>>>> 567d5c7b95efb0484dba9e081e4b4293bedc6d76
     }
     else {
       // The message was sent in a DM, can't retrieve the server info
