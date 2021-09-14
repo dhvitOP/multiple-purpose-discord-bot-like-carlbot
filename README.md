@@ -5,6 +5,7 @@ Create new Issue in that Project if you want Some Help in Error
 Dumb Bot is A MultiPurpose Discord Bot with 214 Commands And 85% Of Database is Based on quick.db
 # Notice
 For Discord.js version 13 Support go in discord.js v13 Branch Some Commands will may not work but if you got any bug or error create an issue
+Removed Registering of Slash Commands Because of error
 ## Contact Us
 https://discord.gg/kBXYKyeWgC Join Discord and My username will be Dhvit
 ## Features 
